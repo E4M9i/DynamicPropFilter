@@ -40,8 +40,9 @@ namespace FilterAttribute
                 Console.WriteLine(d);
             }
             Console.WriteLine(dyn.ID);
-            Console.WriteLine(test.ID);
-
+            //Console.WriteLine(test.ID);
+            var g= new DelTest();
+            g.GenericMethod(g.Print, test.ID.ToString());
         }
         public class MainList
         {
