@@ -42,7 +42,10 @@ namespace FilterAttribute
             Console.WriteLine(dyn.ID);
             //Console.WriteLine(test.ID);
             var g= new DelTest();
-            g.GenericMethod(g.Print, test.ID.ToString());
+            
+            g.GenericMethod(g.Print, test.ID.ToString(),out string  result, g.Print, test.ID.ToString(), out string result2);
+            Console.WriteLine(result);
+            Console.WriteLine(result2);
         }
         public class MainList
         {
